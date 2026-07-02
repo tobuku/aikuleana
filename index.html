@@ -1,9 +1,590 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AiKuleana - Eat Local. Support Local. | Oahu Restaurant Guide</title>
+  <meta name="description" content="Discover the best locally owned restaurants, food trucks, and hidden food gems across Oahu. Support local businesses and experience authentic Hawaiian food culture.">
+  <meta name="keywords" content="Oahu restaurants, local food Hawaii, Hawaiian food guide, best restaurants Oahu, food trucks Hawaii, plate lunch, poke, local dining">
+  <link rel="canonical" href="https://aikuleana.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AiKuleana - Eat Local. Support Local.">
+  <meta property="og:description" content="Discover the best locally owned restaurants, food trucks, and hidden food gems across Oahu.">
+  <meta property="og:url" content="https://aikuleana.com/">
+  <meta property="og:site_name" content="AiKuleana">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AiKuleana - Eat Local. Support Local.">
+  <meta name="twitter:description" content="Discover the best locally owned restaurants, food trucks, and hidden food gems across Oahu.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AiKuleana",
+    "url": "https://aikuleana.com/",
+    "description": "Discover the best locally owned restaurants, food trucks, and hidden food gems across Oahu.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://aikuleana.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://aikuleana.com/"
+    }]
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRL8V217YT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SRL8V217YT');
+  </script>
+</head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-ring"></div>
+    <div class="loader-text">AiKuleana</div>
+  </div>
 
+  <!-- Skip to Content -->
+  <a href="#main" class="sr-only">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="/" class="nav-logo" aria-label="AiKuleana Home">Ai<span>Kuleana</span></a>
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="/" role="menuitem" class="active">Home</a></li>
+        <li role="none"><a href="#restaurants" role="menuitem">Restaurants</a></li>
+        <li role="none"><a href="#cuisines" role="menuitem">Cuisine</a></li>
+        <li role="none"><a href="#neighborhoods" role="menuitem">Neighborhoods</a></li>
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" role="banner">
+    <div class="hero-bg" aria-hidden="true">
+      <!-- Placeholder gradient backgrounds until real images are added -->
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%231a5c2a'/%3E%3Cstop offset='100%25' stop-color='%232d8a4e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g)' width='1920' height='1080'/%3E%3Ctext x='960' y='540' font-family='sans-serif' font-size='48' fill='rgba(255,255,255,0.15)' text-anchor='middle' dominant-baseline='middle'%3EPlate Lunch%3C/text%3E%3C/svg%3E" alt="" class="active" width="1920" height="1080">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23145228'/%3E%3Cstop offset='100%25' stop-color='%234caf50'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g)' width='1920' height='1080'/%3E%3Ctext x='960' y='540' font-family='sans-serif' font-size='48' fill='rgba(255,255,255,0.15)' text-anchor='middle' dominant-baseline='middle'%3EPoke Bowl%3C/text%3E%3C/svg%3E" alt="" width="1920" height="1080">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='100%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%230d3d1a'/%3E%3Cstop offset='100%25' stop-color='%232d8a4e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g)' width='1920' height='1080'/%3E%3Ctext x='960' y='540' font-family='sans-serif' font-size='48' fill='rgba(255,255,255,0.15)' text-anchor='middle' dominant-baseline='middle'%3EGarlic Shrimp%3C/text%3E%3C/svg%3E" alt="" width="1920" height="1080">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%231a5c2a'/%3E%3Cstop offset='100%25' stop-color='%23a8d5ba'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g)' width='1920' height='1080'/%3E%3Ctext x='960' y='540' font-family='sans-serif' font-size='48' fill='rgba(255,255,255,0.15)' text-anchor='middle' dominant-baseline='middle'%3EMalasadas%3C/text%3E%3C/svg%3E" alt="" width="1920" height="1080">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Eat <span class="highlight">Local</span>. Support <span class="highlight">Local</span>.</h1>
+      <p>Discover the best locally owned restaurants, food trucks, and hidden food gems across Oahu.</p>
+      <div class="hero-buttons">
+        <a href="#restaurants" class="btn btn-primary">Explore Restaurants</a>
+        <a href="#cuisines" class="btn btn-outline-white">Browse by Food</a>
+      </div>
+    </div>
+    <a href="#featured" class="hero-scroll" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </a>
+  </header>
+
+  <main id="main">
+
+    <!-- Featured Restaurants -->
+    <section id="featured" class="section featured-section" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="featured-heading">Featured Restaurants</h2>
+          <div class="accent-line"></div>
+          <p>Hand-picked local favorites serving authentic flavors across Oahu</p>
+        </div>
+        <div class="card-grid" id="restaurants">
+          <!-- Card 1 -->
+          <article class="restaurant-card reveal">
+            <div class="card-image placeholder-img">
+              <span class="card-badge">Featured</span>
+              <div style="padding:80px 20px;text-align:center;color:var(--gray-400);">Restaurant Photo</div>
+            </div>
+            <div class="card-body">
+              <div class="card-cuisine">Hawaiian</div>
+              <h3>Helena's Hawaiian Food</h3>
+              <div class="card-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Kalihi</span>
+                <span>$$</span>
+              </div>
+              <p class="card-desc">James Beard Award-winning institution serving traditional Hawaiian dishes since 1946. Famous for pipikaula and laulau.</p>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">$$</span>
+              <span class="card-rating">4.7</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="restaurant-card reveal">
+            <div class="card-image placeholder-img">
+              <span class="card-badge">Popular</span>
+              <div style="padding:80px 20px;text-align:center;color:var(--gray-400);">Restaurant Photo</div>
+            </div>
+            <div class="card-body">
+              <div class="card-cuisine">Plate Lunch</div>
+              <h3>Rainbow Drive-In</h3>
+              <div class="card-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Kapahulu</span>
+                <span>$</span>
+              </div>
+              <p class="card-desc">Iconic plate lunch spot since 1961. Known for mix plates, loco moco, and boneless chicken served with two scoops rice and mac salad.</p>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">$</span>
+              <span class="card-rating">4.5</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="restaurant-card reveal">
+            <div class="card-image placeholder-img">
+              <span class="card-badge">Hidden Gem</span>
+              <div style="padding:80px 20px;text-align:center;color:var(--gray-400);">Restaurant Photo</div>
+            </div>
+            <div class="card-body">
+              <div class="card-cuisine">Japanese</div>
+              <h3>Marukame Udon</h3>
+              <div class="card-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Waikiki</span>
+                <span>$</span>
+              </div>
+              <p class="card-desc">Fresh handmade udon noodles prepared right before your eyes. Always a line, always worth the wait.</p>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">$</span>
+              <span class="card-rating">4.6</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="restaurant-card reveal">
+            <div class="card-image placeholder-img">
+              <span class="card-badge">Editor's Pick</span>
+              <div style="padding:80px 20px;text-align:center;color:var(--gray-400);">Restaurant Photo</div>
+            </div>
+            <div class="card-body">
+              <div class="card-cuisine">Seafood</div>
+              <h3>Ono Seafood</h3>
+              <div class="card-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Kapahulu</span>
+                <span>$$</span>
+              </div>
+              <p class="card-desc">Some of the best poke on the island. Shoyu ahi and spicy ahi are local favorites at this no-frills takeout spot.</p>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">$$</span>
+              <span class="card-rating">4.8</span>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="restaurant-card reveal">
+            <div class="card-image placeholder-img">
+              <span class="card-badge">Local Fav</span>
+              <div style="padding:80px 20px;text-align:center;color:var(--gray-400);">Restaurant Photo</div>
+            </div>
+            <div class="card-body">
+              <div class="card-cuisine">Korean</div>
+              <h3>Yummy Korean BBQ</h3>
+              <div class="card-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Kaimuki</span>
+                <span>$$</span>
+              </div>
+              <p class="card-desc">Family-run Korean BBQ with generous portions. The kalbi and meat jun keep locals coming back for decades.</p>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">$$</span>
+              <span class="card-rating">4.4</span>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="restaurant-card reveal">
+            <div class="card-image placeholder-img">
+              <span class="card-badge">New</span>
+              <div style="padding:80px 20px;text-align:center;color:var(--gray-400);">Restaurant Photo</div>
+            </div>
+            <div class="card-body">
+              <div class="card-cuisine">Bakery</div>
+              <h3>Leonard's Bakery</h3>
+              <div class="card-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Kapahulu</span>
+                <span>$</span>
+              </div>
+              <p class="card-desc">The original malasada bakery since 1952. Hot, fresh Portuguese donuts that melt in your mouth. A must-visit Oahu tradition.</p>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">$</span>
+              <span class="card-rating">4.7</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cuisine Categories -->
+    <section id="cuisines" class="section" aria-labelledby="cuisine-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="cuisine-heading">Browse by Cuisine</h2>
+          <div class="accent-line"></div>
+          <p>From traditional Hawaiian to global flavors -- find exactly what you're craving</p>
+        </div>
+        <div class="cuisine-grid reveal">
+          <a href="#" class="cuisine-card" aria-label="Hawaiian cuisine">
+            <span class="cuisine-icon" aria-hidden="true">&#127860;</span>
+            <span class="cuisine-name">Hawaiian</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Japanese cuisine">
+            <span class="cuisine-icon" aria-hidden="true">&#127843;</span>
+            <span class="cuisine-name">Japanese</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Korean cuisine">
+            <span class="cuisine-icon" aria-hidden="true">&#127858;</span>
+            <span class="cuisine-name">Korean</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Filipino cuisine">
+            <span class="cuisine-icon" aria-hidden="true">&#127835;</span>
+            <span class="cuisine-name">Filipino</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Chinese cuisine">
+            <span class="cuisine-icon" aria-hidden="true">&#129379;</span>
+            <span class="cuisine-name">Chinese</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Poke">
+            <span class="cuisine-icon" aria-hidden="true">&#127843;</span>
+            <span class="cuisine-name">Poke</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Plate Lunch">
+            <span class="cuisine-icon" aria-hidden="true">&#127857;</span>
+            <span class="cuisine-name">Plate Lunch</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Seafood">
+            <span class="cuisine-icon" aria-hidden="true">&#129424;</span>
+            <span class="cuisine-name">Seafood</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Shave Ice">
+            <span class="cuisine-icon" aria-hidden="true">&#127847;</span>
+            <span class="cuisine-name">Shave Ice</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Thai cuisine">
+            <span class="cuisine-icon" aria-hidden="true">&#127836;</span>
+            <span class="cuisine-name">Thai</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Vietnamese cuisine">
+            <span class="cuisine-icon" aria-hidden="true">&#127836;</span>
+            <span class="cuisine-name">Vietnamese</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Mexican cuisine">
+            <span class="cuisine-icon" aria-hidden="true">&#127790;</span>
+            <span class="cuisine-name">Mexican</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="BBQ">
+            <span class="cuisine-icon" aria-hidden="true">&#127830;</span>
+            <span class="cuisine-name">BBQ</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Bakery">
+            <span class="cuisine-icon" aria-hidden="true">&#127856;</span>
+            <span class="cuisine-name">Bakery</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Coffee">
+            <span class="cuisine-icon" aria-hidden="true">&#9749;</span>
+            <span class="cuisine-name">Coffee</span>
+          </a>
+          <a href="#" class="cuisine-card" aria-label="Food Trucks">
+            <span class="cuisine-icon" aria-hidden="true">&#128666;</span>
+            <span class="cuisine-name">Food Trucks</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Neighborhoods -->
+    <section id="neighborhoods" class="section neighborhoods-section" aria-labelledby="neighborhoods-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="neighborhoods-heading">Explore Neighborhoods</h2>
+          <div class="accent-line"></div>
+          <p>Every neighborhood has its own food story. Find yours.</p>
+        </div>
+        <div class="neighborhood-grid reveal">
+          <a href="#" class="neighborhood-card">
+            <div class="neighborhood-bg placeholder-img" style="width:100%;height:100%;">
+              <span>Waikiki</span>
+            </div>
+            <div class="neighborhood-overlay">
+              <h3>Waikiki</h3>
+              <span class="neighborhood-count">45+ restaurants</span>
+            </div>
+          </a>
+          <a href="#" class="neighborhood-card">
+            <div class="neighborhood-bg placeholder-img" style="width:100%;height:100%;">
+              <span>Kaimuki</span>
+            </div>
+            <div class="neighborhood-overlay">
+              <h3>Kaimuki</h3>
+              <span class="neighborhood-count">30+ restaurants</span>
+            </div>
+          </a>
+          <a href="#" class="neighborhood-card">
+            <div class="neighborhood-bg placeholder-img" style="width:100%;height:100%;">
+              <span>Chinatown</span>
+            </div>
+            <div class="neighborhood-overlay">
+              <h3>Chinatown</h3>
+              <span class="neighborhood-count">25+ restaurants</span>
+            </div>
+          </a>
+          <a href="#" class="neighborhood-card">
+            <div class="neighborhood-bg placeholder-img" style="width:100%;height:100%;">
+              <span>North Shore</span>
+            </div>
+            <div class="neighborhood-overlay">
+              <h3>North Shore</h3>
+              <span class="neighborhood-count">20+ restaurants</span>
+            </div>
+          </a>
+          <a href="#" class="neighborhood-card">
+            <div class="neighborhood-bg placeholder-img" style="width:100%;height:100%;">
+              <span>Kakaako</span>
+            </div>
+            <div class="neighborhood-overlay">
+              <h3>Kakaako</h3>
+              <span class="neighborhood-count">35+ restaurants</span>
+            </div>
+          </a>
+          <a href="#" class="neighborhood-card">
+            <div class="neighborhood-bg placeholder-img" style="width:100%;height:100%;">
+              <span>Kailua</span>
+            </div>
+            <div class="neighborhood-overlay">
+              <h3>Kailua</h3>
+              <span class="neighborhood-count">28+ restaurants</span>
+            </div>
+          </a>
+          <a href="#" class="neighborhood-card">
+            <div class="neighborhood-bg placeholder-img" style="width:100%;height:100%;">
+              <span>Kapahulu</span>
+            </div>
+            <div class="neighborhood-overlay">
+              <h3>Kapahulu</h3>
+              <span class="neighborhood-count">22+ restaurants</span>
+            </div>
+          </a>
+          <a href="#" class="neighborhood-card">
+            <div class="neighborhood-bg placeholder-img" style="width:100%;height:100%;">
+              <span>Pearl City</span>
+            </div>
+            <div class="neighborhood-overlay">
+              <h3>Pearl City</h3>
+              <span class="neighborhood-count">18+ restaurants</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Philosophy -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="about-heading">What is Kuleana?</h2>
+          <div class="accent-line" style="background:var(--green-accent);"></div>
+        </div>
+        <p class="reveal"><strong>Ai</strong> means "to eat" in Hawaiian. <strong>Kuleana</strong> means responsibility, care, and stewardship. Together, AiKuleana represents our commitment to caring about where we eat -- supporting local businesses, preserving Hawaiian culture, and encouraging everyone to experience authentic food across Oahu.</p>
+        <p class="reveal">Every restaurant listed here is locally owned. Every story is real. Every recommendation comes from the community. When you eat local, you support families, neighborhoods, and traditions that make Hawaii special.</p>
+        <div class="about-stats reveal">
+          <div class="stat-item">
+            <span class="stat-number" data-count="150" data-suffix="+">0</span>
+            <span class="stat-label">Local Restaurants</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="30" data-suffix="+">0</span>
+            <span class="stat-label">Neighborhoods</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="16" data-suffix="">0</span>
+            <span class="stat-label">Cuisine Types</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food Truck Spotlight -->
+    <section class="section" aria-labelledby="foodtruck-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="foodtruck-heading">Food Truck Spotlight</h2>
+          <div class="accent-line"></div>
+          <p>Oahu's best eats on wheels -- from garlic shrimp to Korean tacos</p>
+        </div>
+        <div class="card-grid">
+          <article class="restaurant-card reveal">
+            <div class="card-image placeholder-img">
+              <span class="card-badge">Food Truck</span>
+              <div style="padding:80px 20px;text-align:center;color:var(--gray-400);">Food Truck Photo</div>
+            </div>
+            <div class="card-body">
+              <div class="card-cuisine">Shrimp</div>
+              <h3>Giovanni's Shrimp Truck</h3>
+              <div class="card-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> North Shore</span>
+              </div>
+              <p class="card-desc">The original garlic shrimp truck. Graffiti-covered and always packed with a line of hungry visitors and locals alike.</p>
+            </div>
+          </article>
+          <article class="restaurant-card reveal">
+            <div class="card-image placeholder-img">
+              <span class="card-badge">Food Truck</span>
+              <div style="padding:80px 20px;text-align:center;color:var(--gray-400);">Food Truck Photo</div>
+            </div>
+            <div class="card-body">
+              <div class="card-cuisine">Hawaiian Fusion</div>
+              <h3>Elephant Truck</h3>
+              <div class="card-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Kakaako</span>
+              </div>
+              <p class="card-desc">Creative fusion plates blending Thai and Hawaiian flavors. Their signature panang curry plate lunch is legendary.</p>
+            </div>
+          </article>
+          <article class="restaurant-card reveal">
+            <div class="card-image placeholder-img">
+              <span class="card-badge">Food Truck</span>
+              <div style="padding:80px 20px;text-align:center;color:var(--gray-400);">Food Truck Photo</div>
+            </div>
+            <div class="card-body">
+              <div class="card-cuisine">Acai Bowls</div>
+              <h3>Banan</h3>
+              <div class="card-meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Multiple Locations</span>
+              </div>
+              <p class="card-desc">Island-grown frozen fruit bowls with local toppings. Their banana-based soft serve is dairy-free and delicious.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="contact" class="section newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="newsletter-heading">Stay in the Loop</h2>
+          <div class="accent-line"></div>
+          <p>Get weekly updates on new restaurants, hidden gems, and food events across Oahu.</p>
+        </div>
+        <form class="newsletter-form reveal" aria-label="Newsletter signup">
+          <label for="newsletter-email" class="sr-only">Email address</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required autocomplete="email">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Ai<span>Kuleana</span></span>
+          <p>Celebrating Oahu's locally owned restaurants, food trucks, and hidden gems. Eat local. Support local. That's our kuleana.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><path fill="#fff" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#restaurants">Restaurants</a>
+          <a href="#">Food Trucks</a>
+          <a href="#neighborhoods">Neighborhoods</a>
+          <a href="#cuisines">Cuisine</a>
+          <a href="#">Top Picks</a>
+          <a href="#">Hidden Gems</a>
+        </div>
+        <div class="footer-col">
+          <h4>Popular</h4>
+          <a href="#">Best Poke</a>
+          <a href="#">Best Plate Lunch</a>
+          <a href="#">Best Ramen</a>
+          <a href="#">Best Coffee</a>
+          <a href="#">Best Shave Ice</a>
+          <a href="#">Budget Eats</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#">Blog</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Advertise</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 AiKuleana. All rights reserved.</span>
+        <span>Made with aloha in Hawaii</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </a>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
