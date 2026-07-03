@@ -35,7 +35,7 @@
 .page-hero .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.7) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.7) 100%);
 }
 
 .page-hero .hero-content {
@@ -266,14 +266,15 @@
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
-  transition: all var(--transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
+  border: 1px solid rgba(0,0,0,0.04);
 }
 
 .bake-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
 }
 
 .bake-card .card-image {
@@ -283,15 +284,27 @@
   background: var(--gray-200);
 }
 
+.bake-card .card-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0,0,0,0.12), transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .bake-card .card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bake-card:hover .card-image img {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .bake-card .card-badges {
@@ -306,12 +319,14 @@
 .bake-card .card-badge {
   background: var(--green-primary);
   color: var(--white);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: var(--radius-full);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 2;
 }
 
 .bake-card .card-badge.fresh {
@@ -428,12 +443,14 @@
 }
 
 .bake-card .specialty-tag {
-  font-size: 0.72rem;
-  padding: 3px 10px;
+  font-size: 0.7rem;
+  padding: 4px 10px;
   border-radius: var(--radius-full);
   background: var(--green-pale);
   color: var(--green-dark);
   font-weight: 500;
+  letter-spacing: 0.2px;
+  border: 1px solid rgba(45,138,78,0.08);
 }
 
 .bake-card .card-footer {
@@ -479,27 +496,30 @@
 }
 
 .section-tab {
-  padding: 10px 24px;
+  padding: 10px 22px;
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   border-radius: var(--radius-full);
-  border: 2px solid var(--gray-200);
+  border: 1.5px solid var(--gray-200);
   background: var(--white);
   color: var(--gray-600);
-  transition: all var(--transition);
+  transition: all 0.25s ease;
   cursor: pointer;
+  letter-spacing: 0.2px;
 }
 
 .section-tab:hover {
   border-color: var(--green-primary);
   color: var(--green-primary);
+  background: var(--green-pale);
 }
 
 .section-tab.active {
   background: var(--green-primary);
   border-color: var(--green-primary);
   color: var(--white);
+  box-shadow: 0 3px 10px rgba(45,138,78,0.25);
 }
 
 /* ---------- Social Placeholder ---------- */
@@ -563,16 +583,24 @@
   padding: var(--space-xl);
   box-shadow: var(--shadow-sm);
   position: relative;
+  border: 1px solid rgba(0,0,0,0.04);
+  transition: all 0.35s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
 }
 
 .testimonial-card .quote-mark {
   font-family: Georgia, serif;
-  font-size: 4rem;
-  color: var(--green-pale);
+  font-size: 4.5rem;
+  color: var(--green-accent);
   line-height: 1;
   position: absolute;
-  top: 16px;
+  top: 12px;
   left: 24px;
+  opacity: 0.5;
 }
 
 .testimonial-card blockquote {
@@ -616,26 +644,41 @@
 
 /* ---------- CTA Banner ---------- */
 .cta-banner {
-  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-primary) 100%);
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-primary) 60%, #34a058 100%);
   border-radius: var(--radius-lg);
   padding: var(--space-2xl) var(--space-xl);
   text-align: center;
   color: var(--white);
-  margin: var(--space-xl) 0;
+  margin: var(--space-2xl) 0 var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .cta-banner h2 {
   color: var(--white);
   font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: var(--space-sm);
+  letter-spacing: -0.3px;
 }
 
 .cta-banner p {
-  opacity: 0.9;
+  opacity: 0.92;
   margin-bottom: var(--space-lg);
-  max-width: 500px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.7;
 }
 
 /* ---------- Responsive ---------- */
